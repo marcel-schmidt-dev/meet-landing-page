@@ -1,0 +1,99 @@
+$cyan-600: #4d96a9;
+$cyan-300: #8fe3f9;
+$purple-600: #855fb1;
+$purple-300: #d9b8ff;
+$slate-900: #28283d;
+$slate-600: #87879d;
+$slate-300: #d1d1df;
+$white: #fafafa;
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url("/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RedHatDisplay-Italic;
+  src: url("/RedHatDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+.flex {
+  display: flex;
+  gap: 4px;
+
+  @media (min-width: 100px) {
+    gap: 8px;
+  }
+
+  @media (min-width: 200px) {
+    gap: 16px;
+  }
+
+  @media (min-width: 300px) {
+    gap: 24px;
+  }
+
+  @media (min-width: 400px) {
+    gap: 32px;
+  }
+
+  @media (min-width: 500px) {
+    gap: 40px;
+  }
+
+  @media (min-width: 700px) {
+    gap: 56px;
+  }
+
+  @media (min-width: 800px) {
+    gap: 64px;
+  }
+
+  @media (min-width: 900px) {
+    gap: 72px;
+  }
+
+  @media (min-width: 1000px) {
+    gap: 80px;
+  }
+
+  @media (min-width: 1400px) {
+    gap: 112px;
+  }
+}
+
+.text-1 {
+  font-family: RedHatDisplay;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.text-2 {
+  font-family: RedHatDisplay;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.text-3 {
+  font-family: RedHatDisplay;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 4px;
+}
+
+.text-4 {
+  font-family: RedHatDisplay;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.text-5 {
+  font-family: RedHatDisplay;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
