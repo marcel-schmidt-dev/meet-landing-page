@@ -1,0 +1,52 @@
+@use "../vars.scss" as *;
+
+.smarter {
+  padding: $spacing-32;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .gallery {
+    display: flex;
+    gap: $spacing-16;
+    padding: $spacing-64 0;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      gap: $spacing-24;
+    }
+
+    img {
+      width: calc(50% - $spacing-16 / 2);
+      border-radius: 8px;
+
+      @media (min-width: 768px) {
+        width: calc(25% - ($spacing-24 / 1.333));
+      }
+    }
+  }
+
+  .content {
+    max-width: 512px;
+    margin: 0 auto;
+    * {
+      text-align: center;
+    }
+
+    h3 {
+      color: $cyan-600;
+      margin-bottom: $spacing-16;
+    }
+
+    h2 {
+      margin-bottom: $spacing-32;
+      padding: 0 $spacing-32;
+      color: $slate-900;
+    }
+
+    p {
+      color: $slate-600;
+    }
+  }
+}
