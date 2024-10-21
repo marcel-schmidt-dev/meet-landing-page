@@ -7,6 +7,18 @@ $slate-600: #87879d;
 $slate-300: #d1d1df;
 $white: #fafafa;
 
+$spacing-112: 112px;
+$spacing-80: 80px;
+$spacing-72: 72px;
+$spacing-64: 64px;
+$spacing-56: 56px;
+$spacing-40: 40px;
+$spacing-32: 32px;
+$spacing-24: 24px;
+$spacing-16: 16px;
+$spacing-8: 8px;
+$spacing-4: 4px;
+
 @font-face {
   font-family: RedHatDisplay;
   src: url("/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
@@ -15,87 +27,4 @@ $white: #fafafa;
 @font-face {
   font-family: RedHatDisplay-Italic;
   src: url("/RedHatDisplay-Italic-VariableFont_wght.ttf") format("truetype");
-}
-
-.flex {
-  display: flex;
-  gap: 4px;
-
-  @media (min-width: 100px) {
-    gap: 8px;
-  }
-
-  @media (min-width: 200px) {
-    gap: 16px;
-  }
-
-  @media (min-width: 300px) {
-    gap: 24px;
-  }
-
-  @media (min-width: 400px) {
-    gap: 32px;
-  }
-
-  @media (min-width: 500px) {
-    gap: 40px;
-  }
-
-  @media (min-width: 700px) {
-    gap: 56px;
-  }
-
-  @media (min-width: 800px) {
-    gap: 64px;
-  }
-
-  @media (min-width: 900px) {
-    gap: 72px;
-  }
-
-  @media (min-width: 1000px) {
-    gap: 80px;
-  }
-
-  @media (min-width: 1400px) {
-    gap: 112px;
-  }
-}
-
-.text-1 {
-  font-family: RedHatDisplay;
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 1.1;
-  color: $slate-900;
-}
-
-.text-2 {
-  font-family: RedHatDisplay;
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 1.1;
-}
-
-.text-3 {
-  font-family: RedHatDisplay;
-  font-size: 0.75rem;
-  font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: 4px;
-}
-
-.text-4 {
-  font-family: RedHatDisplay;
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 1.5;
-  color: $slate-600;
-}
-
-.text-5 {
-  font-family: RedHatDisplay;
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 1.5;
 }
