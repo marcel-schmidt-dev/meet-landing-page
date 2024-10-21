@@ -1,4 +1,7 @@
-@use "./vars.scss";
+@use "./vars.scss" as *;
+@use "./scss/header.scss";
+@use "./scss/smarter.scss";
+@use "./scss/experience.scss";
 
 *,
 *::before,
@@ -10,4 +13,99 @@
 
 body {
   font-size: 16px;
+  background-color: $white;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "RedHatDisplay", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: "RedHatDisplay", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.5rem;
+  }
+}
+
+.sub-heading {
+  font-family: "RedHatDisplay", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+p {
+  font-family: "RedHatDisplay", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+button {
+  padding: $spacing-16 $spacing-40;
+  border-radius: 100vw;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  font-family: "RedHatDisplay", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.circle-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $slate-600;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px $slate-600;
+    background-color: $white;
+    font-family: "RedHatDisplay", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 900;
+  }
+
+  hr {
+    border: none;
+    width: 1px;
+    height: 80px;
+    background-color: $slate-600;
+  }
 }
