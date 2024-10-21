@@ -1,0 +1,79 @@
+@use "../vars.scss" as *;
+
+.experience {
+  padding-top: $spacing-32;
+
+  .circle-element {
+    z-index: 2;
+    position: relative;
+  }
+
+  .content {
+    background-color: $cyan-600;
+    position: relative;
+    .container {
+      padding: $spacing-64 $spacing-32;
+      margin-top: -$spacing-32;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $spacing-24;
+      text-align: center;
+      z-index: 1;
+
+      @media (min-width: 1440px) {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: $spacing-112 0;
+        text-align: left;
+        justify-content: space-between;
+      }
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url("/mobile/image-footer.jpg");
+      background-size: cover;
+      opacity: 0.1;
+
+      @media (min-width: 768px) {
+        background-image: url("/tablet/image-footer.jpg");
+      }
+
+      @media (min-width: 1440px) {
+        background-image: url("/desktop/image-footer.jpg");
+      }
+    }
+
+    h2,
+    p {
+      color: $white;
+      z-index: 3;
+      max-width: 512px;
+
+      @media (min-width: 1440px) {
+        flex: 1;
+      }
+    }
+
+    button {
+      z-index: 3;
+      background-color: $purple-600;
+      color: $white;
+
+      span {
+        color: $purple-300;
+      }
+
+      &:hover {
+        background-color: #b18bdd;
+      }
+    }
+  }
+}
